@@ -18,7 +18,7 @@ class SitemapModule extends WebModule
 	// автор модуля (Ваше Имя, название студии и т.п.)
 	public function getAuthor()
 	{
-	    return Yii::t('SitemapModule.sitemap', 'Yupe');
+	    return Yii::t('SitemapModule.sitemap', 'Timurio');
 	}
  
 	// контактный email автора
