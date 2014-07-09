@@ -1,10 +1,10 @@
 <?php
 /**
  *
- * Ôàéë êîíôèãóğàöèè ìîäóëÿ sitemap
+ * Ğ¤Ğ°Ğ¹Ğ» ĞºĞ¾Ğ½Ñ„Ğ¸Ğ³ÑƒÑ€Ğ°Ñ†Ğ¸Ğ¸ Ğ¼Ğ¾Ğ´ÑƒĞ»Ñ sitemap
  *
- * Àäàïòàöèÿ sitemap äëÿ Yii â âèäå ìîäóëÿ äëÿ Yupe
- * Îğèãèíàë òóò: http://www.elisdn.ru/blog/38/sitemap-for-yii-project
+ * ĞĞ´Ğ°Ğ¿Ñ‚Ğ°Ñ†Ğ¸Ñ sitemap Ğ´Ğ»Ñ Yii Ğ² Ğ²Ğ¸Ğ´Ğµ Ğ¼Ğ¾Ğ´ÑƒĞ»Ñ Ğ´Ğ»Ñ Yupe
+ * ĞÑ€Ğ¸Ğ³Ğ¸Ğ½Ğ°Ğ» Ñ‚ÑƒÑ‚: http://www.elisdn.ru/blog/38/sitemap-for-yii-project
  *
  * @author Timurio <info@easy-tickets.ru>
  * @link http://yupe.ru
@@ -12,12 +12,14 @@
  * @package yupe.modules.sitemap.install
  * 
  */
+
 return array(
     'module'   => array(
         'class'  => 'application.modules.sitemap.SitemapModule',
     ),
     'import'    => array(
-        'application.modules.sitemap.models.*',
+        'application.modules.news.models.*',
+        'application.modules.page.models.*',
     ),
     'component' => array(),
     'rules'     => array(
