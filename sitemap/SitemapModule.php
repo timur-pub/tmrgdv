@@ -9,6 +9,15 @@ class SitemapModule extends WebModule
 	    return Yii::t('SitemapModule.sitemap', 'Sitemap');
 	}
 	
+	// зависимости модуля
+	public function getDependencies()
+    	{
+        	return array(
+            		'news',
+			'page',
+		);
+	}
+
 	// описание модуля
 	public function getDescription()
 	{
@@ -47,13 +56,4 @@ class SitemapModule extends WebModule
 		));
 	}
 
-	public function beforeControllerAction($controller, $action)
-	{
-		if(parent::beforeControllerAction($controller, $action))
-		{
-			return true;
-		}
-		else
-			return false;
-	}
 }
