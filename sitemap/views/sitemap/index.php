@@ -15,8 +15,8 @@
                 <loc><?php echo $model->getPermaLink();?></loc>
                 <lastmod><?php echo date(DATE_W3C, strtotime($model->change_date)); ?></lastmod>
             <?php } ?>
-            <changefreq><?php echo $item['changefreq']; ?></changefreq>
-            <priority><?php echo $item['priority']; ?></priority>
+                <changefreq><?php echo $item['changefreq']; ?></changefreq>
+                <priority><?php echo $item['priority']; ?></priority>
         </url>
         <?php endforeach; ?>
     <?php endforeach; ?>

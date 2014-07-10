@@ -11,6 +11,13 @@ class SitemapController extends yupe\components\controllers\Controller
 	const YEARLY = 'yearly';
 	const NEVER = 'never';
 
+
+	protected function beforeAction($action) {
+		ob_clean(); // clear output buffer to avoid rendering anything else
+		header('Content-type: application/xml'); // set content type header as xml
+        	return parent::beforeAction($action);
+	}
+
 	public function actionIndex()
 	{
 		/* Список моделей, которые мы выгружаем в sitemap.xml
